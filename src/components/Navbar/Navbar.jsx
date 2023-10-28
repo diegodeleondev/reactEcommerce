@@ -4,7 +4,7 @@ import classes from "./Navbar.module.css"
 const Navbar = () => {
     return (
         <nav className={`${classes.color} ${classes.estiloNav}`}>
-            <h1>                 Motorbikecommerce
+            <h1 style={{color: 'green', fontSize: 70}}>       Motorbikecommerce
             </h1>
             <section>
                 <button className={classes.buttonStyle}>Motos</button>
