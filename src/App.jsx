@@ -7,6 +7,7 @@ import Button from './components/Button/Button'
 import { useState, useEffect } from 'react'
 import MercadoLibre from './components/MercadoLibre/MercadoLibre'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 /* const Layout = (props) => {
   return (
@@ -16,21 +17,29 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
     </div>
   )
 } */
-const App = () => {
+
+
+
+function App () {
   return (
     <>
-      <Navbar />
-      <ItemListContainer saludos={"Bienvenido a Motorbikecommerce"} />
-{/*       <ItemCount />
- */}{      <ItemDetailContainer />     
-}      <MercadoLibre />
-   {/*    <Layout titulo={"Compra segura"}>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+        <Route path="/" element={<ItemListContainer saludos={"Bienvenido a Motorbikecommerce"} />} />
+        <Route path="/category/:categoryId" element={<ItemListContainer saludos={"Categorías"} />} />
+                {/*       <ItemCount />*/}
+        <Route path="/item/:itemId" element={<ItemDetailContainer />} />    
+        </Routes>
+        <MercadoLibre />
+      </BrowserRouter>
+      {/*    <Layout titulo={"Compra segura"}>
         <h3>Paga con VISA, MasterCard y Dinner's Club</h3>
       </Layout> */}
       {/* <App1 /> */}
       {/* <Count /> */}
       {/*       <App2 /> */}
-   {/*    <ContadorDeVueltas /> */}
+      {/*    <ContadorDeVueltas /> */}
     </>
   )
 }

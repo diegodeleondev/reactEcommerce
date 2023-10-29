@@ -15,3 +15,7 @@
     margin: 10px;
     width: 150px;
 }
+
+.buttonStyle a {
+    color: yellow;
+}
