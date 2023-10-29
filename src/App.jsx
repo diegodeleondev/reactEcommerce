@@ -5,24 +5,28 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import CartWidget from './components/CartWidget/CartWidget'
 import Button from './components/Button/Button'
 import { useState, useEffect } from 'react'
+import MercadoLibre from './components/MercadoLibre/MercadoLibre'
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 
-const Layout = (props) => {
+/* const Layout = (props) => {
   return (
     <div>
       <h2>{props.titulo}</h2>
       {props.children}
     </div>
   )
-}
+} */
 const App = () => {
   return (
     <>
       <Navbar />
       <ItemListContainer saludos={"Bienvenido a Motorbikecommerce"} />
-      <ItemCount />
-      <Layout titulo={"Compra segura"}>
+{/*       <ItemCount />
+ */}{      <ItemDetailContainer />     
+}      <MercadoLibre />
+   {/*    <Layout titulo={"Compra segura"}>
         <h3>Paga con VISA, MasterCard y Dinner's Club</h3>
-      </Layout>
+      </Layout> */}
       {/* <App1 /> */}
       {/* <Count /> */}
       {/*       <App2 /> */}

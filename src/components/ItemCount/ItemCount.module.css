@@ -1,0 +1,8 @@
+.itemCount {
+    background-color: green;
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 0 0 25px 25px;
+    font-size: 20px;
+    color: yellow;
+}

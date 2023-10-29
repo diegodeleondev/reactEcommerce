@@ -1,0 +1,25 @@
+.containerProduct {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: yellow;
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tituloProduct {
+    font-size: 20px;
+    color: green;
+}
+
+.categoryProduct {
+    font-size: 20px;
+    color: green;
+}
+
+.imageProduct {
+    width: 150px;
+    border-radius: 15px;
+}

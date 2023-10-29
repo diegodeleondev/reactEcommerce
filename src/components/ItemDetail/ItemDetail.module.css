@@ -1,0 +1,29 @@
+.cardItem {
+    width: 800px;
+    background-color: yellow;
+    border-radius: 25px;
+}
+
+.header {
+    display: flex;
+    background-color: green;
+    border-radius: 25px 25px 0 0;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemHeader {
+    color: yellow;
+    font-size: 40px;
+}
+
+.itemImg {
+    width: 80%;
+}
+
+.info {
+    color: green;
+    font-size: 25px;
+    padding: 0 20px;
+}

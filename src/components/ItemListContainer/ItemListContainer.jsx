@@ -1,7 +1,7 @@
 import { getProducts } from "../asyncMock"
 import ItemList from "../ItemList/ItemList"
 import { useState, useEffect } from "react"
-
+import classes from "./ItemListContainer.module.css"
 
 const ItemListContainer = ({ saludos }) => {
     const [products, setProducts] = useState([])
@@ -24,7 +24,7 @@ const ItemListContainer = ({ saludos }) => {
         }) */
 
     return (
-        <div>
+        <div className={classes.itemGrid}>
             <h2>{saludos}</h2>
             <ItemList products={products} />
         </div>
